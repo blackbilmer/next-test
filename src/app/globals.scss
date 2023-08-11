@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-SemiBold.ttf);
+}
+
+
+@import "../components/header/header.scss";
+@import "../components/footer/Footer.scss";
+@import "../components/home/Home.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
+}
+body{
+    background: #e6e7e8;
+    
+    
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
