@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { BsYoutube } from 'react-icons/bs'
 import { FaFacebookF, FaTwitter } from 'react-icons/fa'
-
-
 export default async function Footer() {
     return (
         <>

@@ -1,11 +1,5 @@
-// "use client"
-
-
-import Image from 'next/image'
 import Link from 'next/link'
-// import { Container } from 'react-bootstrap'
-import { BsSearch, BsYoutube } from 'react-icons/bs'
-import { GrSearch } from 'react-icons/gr'
+import { BsYoutube } from 'react-icons/bs'
 import { HiSearch } from 'react-icons/hi'
 import { FaFacebookF, FaTwitter } from 'react-icons/fa'
 

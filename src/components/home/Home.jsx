@@ -20,18 +20,7 @@ export default async function Api() {
     const apiCategory = await fetch(`${API}news/${itemsSSh}`)
     const jsonCategory = await apiCategory.json()
     const random_news = jsonCategory.news_detail_serializer
-    const std = response.map((item, key) => {
-        return (
-            <ul key={key}>
-                <li className="">
-                    {item.id}
-                    <br />
-                    {item.name}
-                </li>
-            </ul>
-        )
-    })
-    const category = apiNew.map((item, index) => {
+    const category = apiNew.map((item) => {
         const truncateString = (string = '', maxLength = 50) =>
             string.length > maxLength
                 ? `${string.substring(0, maxLength)}`
@@ -61,12 +50,7 @@ export default async function Api() {
             ? `${string.substring(0, maxLength)}…`
             : string
     const itemTitle = truncateString(random_news.title, 55)
-    const itemData = moment(random_news.created_at).startOf('minute').fromNow();
-    const navigation = response.map((item, index) => {
-        return <li key={index} className="content-wrapper-category-item">
-            <Link href={`/`} className="content-wrapper-category-link">{item.name}</Link>
-        </li>
-    })
+    const itemData = moment(random_news.created_at).startOf('minute').fromNow()
     const newsParty = apiNew.map((item, index) => {
         // string index
         const truncateString = (string = '', maxLength = 100) =>
@@ -103,12 +87,8 @@ export default async function Api() {
         )
     })
     const content = newsParty.slice(0, 3)
-    
-    
     const dataVideoNews = apiNew.map((item) => {
-        
-        console.log(item.video.length);
-        if (item.video == "") console.log("hello world");
+        if (item.video == "") return null
         else if (item.video != undefined) return (
             <div className="home-video-content-blog" key={item.id}>
                 <Image src={item.image_url} alt="logo" fill sizes="100%" priority className="home-video-content-blog-image" />
@@ -119,16 +99,10 @@ export default async function Api() {
                 </Link>
             </div>
         )
-        // console.log(item.video);
     })
-    
-    
-    console.log(dataVideoNews);
     if (dataVideoNews != undefined) dataVideoNews.slice(-7)
     if (dataVideoNews.length < 4) dataVideo
     else dataVideoNews.pop()
-    
-    // console.log(dataVideo);
     return (
         <>
             <section className='home'>
