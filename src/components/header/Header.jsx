@@ -53,28 +53,28 @@ export default async function Header() {
                     </nav>
                     <nav className='header-bottom'>
                         <div className="header-bottom-content">
-                            <h1 className="header-bottom-content-title">WorldTime</h1>
+                            <Link href="/" className="header-bottom-content-title">WorldTime</Link>
                             <ul className="header-bottom-content-list">
                                 <li className="header-bottom-content-item">
-                                    <Link href="/" className='header-bottom-content-link'>O{title}ZBEKISTON</Link>
+                                    <Link href="/uzbekiston" className='header-bottom-content-link'>O{title}ZBEKISTON</Link>
                                 </li>
                                 <li className="header-bottom-content-item">
-                                    <Link href="/" className='header-bottom-content-link'>JAHON</Link>
+                                    <Link href="/jahon" className='header-bottom-content-link'>JAHON</Link>
                                 </li>
                                 <li className="header-bottom-content-item">
-                                    <Link href="/" className='header-bottom-content-link'>IQTISODIYOT</Link>
+                                    <Link href="/iqtisodiyot" className='header-bottom-content-link'>IQTISODIYOT</Link>
                                 </li>
                                 <li className="header-bottom-content-item">
-                                    <Link href="/" className='header-bottom-content-link'>JAMIYAT</Link>
+                                    <Link href="/jamiyat" className='header-bottom-content-link'>JAMIYAT</Link>
                                 </li>
                                 <li className="header-bottom-content-item">
-                                    <Link href="/" className='header-bottom-content-link'>FAN-TEXNIKA</Link>
+                                    <Link href="/tehnologia" className='header-bottom-content-link'>FAN-TEXNIKA</Link>
                                 </li>
                                 <li className="header-bottom-content-item">
-                                    <Link href="/" className='header-bottom-content-link'>SPORT</Link>
+                                    <Link href="/sport" className='header-bottom-content-link'>SPORT</Link>
                                 </li>
                                 <li className="header-bottom-content-item">
-                                    <Link href="/" className='header-bottom-content-link'>NUQTAYI NAZAR</Link>
+                                    <Link href="/nuqtayi-nazar" className='header-bottom-content-link'>NUQTAYI NAZAR</Link>
                                 </li>
                             </ul>
                             <div className="header-bottom-content-icons">

@@ -1,4 +1,5 @@
 import moment from 'moment';
+import Button from '@mui/material/Button';
 export default async function NavbarWeather() {
 
     // const ser = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=41.278689&lon=69.196221&appid=021c057b527020fa3da6fe6fddb068e0')
@@ -28,7 +29,7 @@ export default async function NavbarWeather() {
             <nav className='navbar'>
                 <div className='container'>
                     <div className="navbar-content">
-                        <button variant="contained" className='navbar-content-btn'><span>refresh news</span></button>
+                        <Button variant="contained" className='navbar-content-btn'><span>refresh news</span></Button>
                         <div className="navbar-news-bottom">
                             <div className='navbar-news-bottom-group'>
                                 <span>{data}&nbsp;,&nbsp;{data_r}</span>

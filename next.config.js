@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
+module.exports = {
+    // your existing configuration...
+  
     images: {
-        domains: ['wordnewsuz.pythonanywhere.com']
-    }
-}
-
-module.exports = nextConfig
+      domains: ['sobit2204.pythonanywhere.com'],
+    },
+  }
