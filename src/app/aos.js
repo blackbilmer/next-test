@@ -11,13 +11,6 @@ export default function Aos() {
     useEffect(() => {
         AOS.init();
     }, [])
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-CBD7KWSDWW');
-
     return (
         <div>
             <Head>
@@ -27,15 +20,11 @@ export default function Aos() {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
                 />
             </Head>
-
-
-
-
             <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js" strategy="afterInteractive"
             />
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-CBD7KWSDWW" strategy="afterInteractive"
             />
-
+            
         </div>
     )
 }

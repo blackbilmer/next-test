@@ -20,9 +20,11 @@
     "eslint-config-next": "^13.4.13",
     "moment": "^2.29.4",
     "next": "^13.4.13",
+    "nextjs-google-analytics": "^2.3.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
     "react-icons": "^4.10.1",
     "sass": "^1.64.2",
     "styled-components": "^5.3.11"
