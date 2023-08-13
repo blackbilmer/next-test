@@ -34,14 +34,6 @@ export default async function Header() {
                             </ul>
                             <div className="header-top-content-group">
                                 <HiSearch className='header-top-content-icon' />
-                                <ul className="header-top-content-list">
-                                    <li className="header-top-content-item">
-                                        <Link href="/" className="header-top-content-link">Login</Link>
-                                    </li>
-                                    <li className="header-top-content-item">
-                                        <Link href="/" className="header-top-content-link">Sign in</Link>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </nav>

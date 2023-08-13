@@ -611,7 +611,7 @@
     border-radius: 5px;
     overflow: hidden;
     // transition: background-color 0.5s;
-    background-color: #fff;
+    // background-color: #fff;
     transition: 0.4s;
     position: relative;
     
@@ -624,7 +624,7 @@
         position: absolute !important;
         right: 20px !important;
         bottom: 10px !important;
-        z-index: +5 !important;
+        z-index: +15 !important;
         color: rgba(41, 41, 41, 1) !important;
         width: 40px !important;
         height: 40px !important;
@@ -636,6 +636,30 @@
         padding: 0 !important;
         border-radius: 50% !important;
         background: #fff !important;
+        // z-index: +15 ;
+    }
+    &-link{
+        z-index: 11;
+    }
+    &-window{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,0.8743872549019608) 0%, rgba(255,255,255,0) 100%);
+        z-index: +10;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    &-title{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        z-index: +15;
     }
     
   }
