@@ -12,7 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-Open the project API (https://sobit2204.pythonanywhere.com/api/v1/)
+Open the project API (https://sobit2204.pythonanywhere.com/api/v1/) with your browser to see the result.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

@@ -6,6 +6,6 @@ module.exports = {
       domains: ['sobit2204.pythonanywhere.com'],
     },
     env: {
-        GOOGLE_ANALYTICS_ID: 'G-CBD7KWSDWW', // O'zingizning tracking ID-ingiz bilan almashtiring
+        GOOGLE_ANALYTICS_ID: 'G-CBD7KWSDWW',
       },
   }

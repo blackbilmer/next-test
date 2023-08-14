@@ -3,6 +3,8 @@ import Button from '@mui/material/Button';
 export default async function NavbarWeather() {
     const ser = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=41.278689&lon=69.196221&appid=021c057b527020fa3da6fe6fddb068e0')
     const res = await ser.json()
+    
+    
     const tempMax = res.main.temp_max
     const realTemp = tempMax - 273.15
     const data_l = moment().format('dddd')

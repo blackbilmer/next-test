@@ -2,6 +2,34 @@ import Image from "next/image";
 import { BsYoutube } from 'react-icons/bs'
 import { FaFacebookF, FaTwitter } from 'react-icons/fa'
 export default async function Footer() {
+    const API = "http://sobit2204.pythonanywhere.com/api/v1/"
+    const categories = "get_category/"
+    const category_item = "category/"
+
+
+    const api = await fetch(`${API}${categories}`)
+    const response = await api.json()
+    const articles_id = response.map((item) => {
+        return item.id
+    })
+    console.log(articles_id);
+    
+    const article = await fetch(`${API}${category_item}${articles_id}`)
+    
+    const res_category = await article.json()
+    console.log(res_category);
+    
+    
+
+
+
+    
+    
+    
+
+    // const category = "category"
+
+
     return (
         <>
             <footer className='footer'>
@@ -48,26 +76,10 @@ export default async function Footer() {
                         <div className="footer-blog-three footer-blog">
                             <h4 className="footer-blog-title footer-blog-secondary-title">CATEGORIES</h4>
                             <ul className="footer-blog-three-list">
-                                <li className="footer-blog-three-item">
+                                {/* <li className="footer-blog-three-item">
                                     <h6 className="footer-blog-three-item-title">Magazine</h6>
                                     <span className="footer-blog-three-item-span">1</span>
-                                </li>
-                                <li className="footer-blog-three-item">
-                                    <h6 className="footer-blog-three-item-title">Business</h6>
-                                    <span className="footer-blog-three-item-span">1</span>
-                                </li>
-                                <li className="footer-blog-three-item">
-                                    <h6 className="footer-blog-three-item-title">Sports</h6>
-                                    <span className="footer-blog-three-item-span">1</span>
-                                </li>
-                                <li className="footer-blog-three-item">
-                                    <h6 className="footer-blog-three-item-title">Arts</h6>
-                                    <span className="footer-blog-three-item-span">1</span>
-                                </li>
-                                <li className="footer-blog-three-item">
-                                    <h6 className="footer-blog-three-item-title">Politics</h6>
-                                    <span className="footer-blog-three-item-span">1</span>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
